@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Elite Gym</title>
+
+    <link rel="stylesheet" href="kontakt.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+    <nav class="navbar">
+        <div class="logo">Elite<span>Gym</span></div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="orari.html">Orari</a></li>
+            <li><a href="rreth-nesh.html">Rreth Nesh</a></li>
+            <li><a href="kontakt.html" class="active">Kontakt</a></li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+<!-- ================= PAGE TITLE ================= -->
+<section class="page-title">
+    <h1>Na Kontakto</h1>
+    <p>Jemi gati për çdo pyetje apo rezervim</p>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact">
+    <div class="contact-info">
+        <h2>Elite Gym</h2>
+        <p><strong>📍 Adresa:</strong> Prishtinë, Kosovë</p>
+        <p><strong>📞 Telefoni:</strong> +383 44 123 456</p>
+        <p><strong>✉ Email:</strong> info@elitegym.com</p>
+        <p><strong>⏰ Orari:</strong> 06:00 – 23:00</p>
+    </div>
+
+    <form class="contact-form">
+        <h3>Na shkruaj</h3>
+
+        <input type="text" placeholder="Emri" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="5" placeholder="Mesazhi" required></textarea>
+
+        <button type="submit">Dërgo Mesazhin</button>
+    </form>
+</section>
+
+<!-- ================= MAP ================= -->
+<section class="map">
+    <iframe 
+        src="https://maps.google.com/maps?q=Prishtina&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        loading="lazy">
+    </iframe>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2025 Elite Gym | Power • Discipline • Results</p>
+</footer>
+
+<!-- ================= SCRIPT NAVBAR ================= -->
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("open");
+    });
+</script>
+
+</body>
+</html>

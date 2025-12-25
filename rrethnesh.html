@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rreth Nesh – Elite Gym</title>
+
+    <link rel="stylesheet" href="rrethnesh.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+    <nav class="navbar">
+        <div class="logo">Elite<span>Gym</span></div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="orari.html">Orari</a></li>
+            <li><a href="rreth-nesh.html" class="active">Rreth Nesh</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+<!-- ================= PAGE TITLE ================= -->
+<section class="page-title">
+    <h1>Rreth Nesh</h1>
+    <p>Kush jemi dhe pse Elite Gym është zgjedhja e duhur</p>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about">
+    <div class="about-content">
+        <h2>Elite Gym</h2>
+        <p>
+            Elite Gym është më shumë se një palestër. Është një komunitet i ndërtuar
+            mbi disiplinë, përkushtim dhe rezultate reale. Ne besojmë se çdo trup ka
+            potencial, dhe misioni ynë është ta nxjerrim në maksimum.
+        </p>
+
+        <p>
+            Me trajnerë profesionistë, pajisje moderne dhe ambient motivues,
+            Elite Gym është vendi ku transformimi fillon.
+        </p>
+    </div>
+
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74" alt="Elite Gym">
+    </div>
+</section>
+
+<!-- ================= VALUES ================= -->
+<section class="values">
+    <div class="value-card">
+        <h3>Disiplinë</h3>
+        <p>Suksesi fillon me rregull dhe përkushtim.</p>
+    </div>
+
+    <div class="value-card">
+        <h3>Forcë</h3>
+        <p>Ndërto trupin dhe mendjen tënde.</p>
+    </div>
+
+    <div class="value-card">
+        <h3>Rezultate</h3>
+        <p>Çdo stërvitje ka qëllim.</p>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2025 Elite Gym | Power • Discipline • Results</p>
+</footer>
+
+<!-- ================= SCRIPT NAVBAR ================= -->
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("open");
+    });
+</script>
+
+</body>
+</html>

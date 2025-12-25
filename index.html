@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Gym</title>
+
+    <!-- CSS lidhet ma von -->
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+    <nav class="navbar">
+        <div class="logo">Elite<span>Gym</span></div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="orari.html">Orari</a></li>
+            <li><a href="rrethnesh.html">Rreth Nesh</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Forco Trupin Tënd</h1>
+        <p>Elite Gym – fuqi, disiplinë dhe rezultate reale</p>
+        <a href="#" class="btn">Bëj Terminin</a>
+    </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="services">
+    <div class="service-card">
+        <h3>Trajnim Personal</h3>
+        <p>Plan individual për çdo trup.</p>
+    </div>
+
+    <div class="service-card">
+        <h3>Pajisje Profesionale</h3>
+        <p>Teknologji moderne për stërvitje maksimale.</p>
+    </div>
+
+    <div class="service-card">
+        <h3>Orar Fleksibil</h3>
+        <p>Stërvitje kur të përshtatet ty.</p>
+    </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta">
+    <h2>Gati për ndryshim?</h2>
+    <a href="#" class="btn dark">Regjistrohu Sot</a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2025 Elite Gym | Power • Discipline • Results</p>
+</footer>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("open");
+    });
+</script>
+
+</body>
+</html>
